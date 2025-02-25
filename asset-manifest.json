@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pantheon-timer/static/css/main.f855e6bc.css",
+    "main.css": "/pantheon-timer/static/css/main.cff68f26.css",
     "main.js": "/pantheon-timer/static/js/main.1177532c.js",
     "static/js/453.119d4ee2.chunk.js": "/pantheon-timer/static/js/453.119d4ee2.chunk.js",
     "index.html": "/pantheon-timer/index.html",
-    "main.f855e6bc.css.map": "/pantheon-timer/static/css/main.f855e6bc.css.map",
+    "main.cff68f26.css.map": "/pantheon-timer/static/css/main.cff68f26.css.map",
     "main.1177532c.js.map": "/pantheon-timer/static/js/main.1177532c.js.map",
     "453.119d4ee2.chunk.js.map": "/pantheon-timer/static/js/453.119d4ee2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
+    "static/css/main.cff68f26.css",
     "static/js/main.1177532c.js"
   ]
 }
