@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Pantheon Camp Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple, elegant timer application designed for Pantheon: Rise of the Fallen, EverQuest, and similar MMORPGs where tracking mob respawn times is essential for efficient camping.
 
-## Available Scripts
+**Live Demo:** [https://cowfieldtechguy.github.io/pantheon-timer/](https://cowfieldtechguy.github.io/pantheon-timer/)
 
-In the project directory, you can run:
+![Pantheon Camp Timer Screenshot](https://i.imgur.com/yourscreenshot.png)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Mob Respawn Tracking**: Monitor multiple mobs with precise countdown timers
+- **Respawn Window Calculation**: Accounts for variance in spawn times (±minutes)
+- **Visual Progress Bars**: See at a glance how close a mob is to respawning
+- **Sound Notifications**: Audio alerts when mobs are about to spawn or have spawned
+- **Desktop Notifications**: System notifications for important spawn events
+- **Data Persistence**: All timers and settings are saved locally in your browser
+- **Dark Theme**: Easy on the eyes during those long gaming sessions
+- **Import/Export**: Share your timer configurations with guildmates
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Use
 
-### `npm test`
+### Adding a New Mob Timer
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Enter the mob's name
+2. Specify the camp location (optional)
+3. Set the respawn time in minutes
+4. Set the variance (±minutes) if the spawn window is variable
+5. Add optional notes (drops, strategies, etc.)
+6. Click "Add Mob Timer"
 
-### `npm run build`
+### Timer Management
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Reset Timer**: Click the refresh icon after killing a mob to reset its timer
+- **Toggle Notifications**: Click the bell icon to enable/disable notifications for specific mobs
+- **Remove Timer**: Click the trash icon to delete a timer
+- **Filter View**: Toggle between "Active Timers" and "All Mobs"
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Progress Bar Color Codes
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Purple/Blue**: Normal progress, not close to spawning yet
+- **Yellow**: Approaching spawn window
+- **Green**: Mob has spawned
 
-### `npm run eject`
+### Settings Panel
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Access the settings by clicking the ⚙️ gear icon in the top right corner.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Notification Timing**: Set how many minutes before spawn you want to be notified
+- **Export/Import**: Save or load timer configurations
+- **Clear All**: Remove all timers (with confirmation)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Sound Controls
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Click the sound icon in the top right to toggle sound notifications on/off
 
-## Learn More
+## Tips for Optimal Use
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Browser Permissions**: Allow desktop notifications when prompted for the best experience
+- **Keep Tab Active**: Some browsers may throttle timers in inactive tabs
+- **Share Configurations**: Use the Export feature to share timer setups with your party
+- **Regular Backups**: Export your timer configurations periodically as a backup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Privacy
 
-### Code Splitting
+This application runs entirely in your browser. All data is stored locally on your device using browser localStorage. No data is sent to any server.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technical Details
 
-### Analyzing the Bundle Size
+This app is built with:
+- React
+- Local Storage API
+- Web Notifications API
+- Web Audio API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+This project is open source. Feel free to fork it, modify it, and make it your own!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Credits
 
-### Advanced Configuration
+Developed by CowFieldTechGuy with assistance from Claude.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License - Use, modify, and share freely!
